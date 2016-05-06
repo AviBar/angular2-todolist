@@ -28,22 +28,6 @@ var webpackConfig = {
 
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Our Webpack Defaults
 var defaultConfig = {
   devtool: 'cheap-module-source-map',
@@ -79,10 +63,10 @@ var defaultConfig = {
     extensions: ['', '.ts', '.js'],
     alias: {
       'angular2/testing': path.join(__dirname, 'node_modules', '@angular', 'core', 'testing.js'),
+      'angular2/testing': path.join(__dirname, 'node_modules', '@angular', 'testing', 'index.js'),
       '@angular/testing': path.join(__dirname, 'node_modules', '@angular', 'core', 'testing.js'),
       'angular2/core': path.join(__dirname, 'node_modules', '@angular', 'core', 'index.js'),
       'angular2/platform/browser': path.join(__dirname, 'node_modules', '@angular', 'platform-browser', 'index.js'),
-      'angular2/testing': path.join(__dirname, 'node_modules', '@angular', 'testing', 'index.js'),
       'angular2/router': path.join(__dirname, 'node_modules', '@angular', 'router-deprecated', 'index.js'),
       'angular2/http': path.join(__dirname, 'node_modules', '@angular', 'http', 'index.js'),
       'angular2/http/testing': path.join(__dirname, 'node_modules', '@angular', 'http', 'testing.js')

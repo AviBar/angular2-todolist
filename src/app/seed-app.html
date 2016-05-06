@@ -1,25 +1,46 @@
-<h3>
-  Angular 2 Seed
-</h3>
-<nav>
-	<a [routerLink]=" ['/Home'] ">
-    Home
-  </a>
-  |
-	<a [routerLink]=" ['/About'] ">
-    About
-  </a>
-  |
-	<a [routerLink]=" ['/RepoBrowser/RepoList', {org: 'angular'}] ">
-    Github Repos
-  </a>
-</nav>
-
-<main>
+<aside class="learn"><header> <h3>JavaScript</h3> <span class="source-links">   <h5>Vanilla JavaScript Example</h5> <a href="https://github.com/tastejs/todomvc/tree/gh-pages/examples/vanillajs">Source</a>   </span> </header> <hr> <blockquote class="quote speech-bubble"> <p>JavaScript® (often shortened to JS) is a lightweight, interpreted, object-oriented language with first-class functions, most known as the scripting language for Web pages, but used in many non-browser environments as well such as node.js or Apache CouchDB.</p> <footer> <a href="http://developer.mozilla.org/en-US/docs/JavaScript">JavaScript</a> </footer> </blockquote>  <footer> <hr> <em>If you have other helpful links to share, or find any of the links above no longer work, please <a href="https://github.com/tastejs/todomvc/issues">let us know</a>.</em> </footer></aside>
+		<section class="todoapp">
+			<header class="header">
+				<h1>todos</h1>
+				<input class="new-todo" placeholder="What needs to be done?" autofocus="">
+			</header>
+			<section class="main" style="display: block;">
+				<input class="toggle-all" type="checkbox">
+				<label for="toggle-all">Mark all as complete</label>
+				<ul class="todo-list">
+              <li data-id="1462520688202" class="">
+              <div class="view">
+                <input class="toggle" type="checkbox">
+                <label>ff1</label><button class="destroy"></button>
+              </div>
+            </li>
+        </ul>
+        <main>
 	<router-outlet></router-outlet>
 </main>
 
-
-<footer>
-  © 2016
-</footer>
+			</section>
+			<footer class="footer" style="display: block;">
+				<span class="todo-count"><strong>1</strong> item left</span>
+        <nav>
+				<ul class="filters">
+					<li>
+						<a [routerLink]=" ['/All'] " class="">All</a>
+					</li>
+					<li>
+						<a [routerLink]=" ['/Active'] " class="selected">Active</a>
+					</li>
+					<li>
+						<a [routerLink]=" ['/Completed'] "  class="">Completed</a>
+					</li>
+				</ul>
+        </nav>
+				<button class="clear-completed" style="display: block;">Clear completed</button>
+			</footer>
+		</section>
+		<footer class="info">
+			<p>Double-click to edit a todo</p>
+			<p>Created by <a href="http://twitter.com/oscargodson">Oscar Godson</a></p>
+			<p>Refactored by <a href="https://github.com/cburgmer">Christoph Burgmer</a></p>
+			<p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+		</footer>
