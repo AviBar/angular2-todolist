@@ -1,8 +1,6 @@
-## angular2-seed
+## angular2-todolist
 
-A simple starter project demonstrating the basic concepts of Angular 2.
-
-This branch uses [Webpack](https://webpack.github.io/) for Development. There is also a SystemJS branch available.
+A simple todolist project demonstrating the basic concepts of Angular 2.
 
 ### Usage
 - Clone or fork this repository
