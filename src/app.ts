@@ -5,7 +5,7 @@ import {HTTP_PROVIDERS} from '@angular/http';
 import {ROUTER_PROVIDERS} from '@angular/router-deprecated';
 
 import {SeedApp} from './app/seed-app';
-
+import 'rxjs/add/operator/map';
 
 // enableProdMode()
 

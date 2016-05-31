@@ -38,6 +38,9 @@ var defaultConfig = {
     sourceMapFilename: '[name].map',
     chunkFilename: '[id].chunk.js'
   },
+    // entry: [
+    // // The script refreshing the browser on none hot updates
+    // 'webpack-dev-server/client?http://localhost:8090'],
 
   module: {
     preLoaders: [
@@ -87,6 +90,5 @@ var defaultConfig = {
     setImmediate: 0
   },
 }
-
 var webpackMerge = require('webpack-merge');
 module.exports = webpackMerge(defaultConfig, webpackConfig);
